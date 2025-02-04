@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PrimeNG } from 'primeng/config';
+import lara from '@primeng/themes/lara';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '05-pipesApp';
+
+  constructor(private primengConfig: PrimeNG) {}
+
+  ngOnInit() {
+    this.primengConfig.ripple.set(true);
+  }
 }
