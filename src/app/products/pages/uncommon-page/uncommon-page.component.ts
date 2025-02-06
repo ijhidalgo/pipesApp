@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { interval, Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-uncommon-page',
+  selector: 'products-uncommon-page',
   standalone: false,
 
   templateUrl: './uncommon-page.component.html',
